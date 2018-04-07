@@ -1,2 +1,2 @@
-name: GC Web Development
+name: My Portfolio
 exclude: ["node_modules", "gulpfile.js", "package.json"]

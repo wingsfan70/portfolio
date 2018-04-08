@@ -462,16 +462,54 @@ body {
   margin: 0 auto;
   width: 60%;
   background-color: #51637F; }
+  @media (max-width: 1115px) {
+    .content-wrapper {
+      width: 80%; } }
+  @media (max-width: 1115px) {
+    .content-wrapper {
+      width: 90%; } }
 
 section {
   padding: 80px;
   border-bottom: 2px solid white; }
 
-header {
-  height: 400px;
-  background-image: url("/assets/img/header-img.jpg");
-  background-size: cover;
-  background-position: center; }
+@media (max-width: 750px) {
+  h1 {
+    font-size: 42px; }
+  section {
+    padding: 40px; }
+  .bigger {
+    font-size: 22px; } }
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px; }
+  section {
+    padding: 20px; }
+  .bigger {
+    font-size: 15px; } }
+
+.bg {
+  position: relative;
+  height: 400px; }
+  @media (max-width: 950px) {
+    .bg {
+      height: 300px; } }
+  @media (max-width: 750px) {
+    .bg {
+      height: 200px; } }
+  .bg:after {
+    content: "";
+    background-image: url("/assets/img/header-img.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; }
 
 .header-text {
   font-size: 72px;
@@ -479,6 +517,19 @@ header {
   line-height: 1;
   text-align: center;
   padding-top: 80px; }
+  @media (max-width: 950px) {
+    .header-text {
+      padding-top: 30px; } }
+  @media (max-width: 750px) {
+    .header-text {
+      padding-top: 10px;
+      font-size: 60px; } }
+  @media (max-width: 500px) {
+    .header-text {
+      font-size: 50px; } }
+  @media (max-width: 400px) {
+    .header-text {
+      font-size: 40px; } }
 
 .about {
   position: relative;
@@ -499,6 +550,15 @@ header {
   text-indent: -9999px;
   border: 3px solid #ffffff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+  @media (max-width: 750px) {
+    .avatar {
+      top: -55px; } }
+  @media (max-width: 500px) {
+    .avatar {
+      top: -70px; } }
+  @media (max-width: 400px) {
+    .avatar {
+      top: -85px; } }
 
 .badge-wrapper {
   display: -ms-flexbox;

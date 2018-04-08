@@ -2,8 +2,12 @@
 layout: default
 title: Gary Caseman Portfolio
 ---
-<div class="home-wrap">
+<main>
     {% include header.html %}
-    {% include home.html %}
-
-</div>
+    <div class="content-wrapper">
+        {% include about.html %}
+        {% include portfolio.html %}
+        {% include contact.html %}
+        {% include footer.html %}
+    </div>
+</main>

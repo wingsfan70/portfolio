@@ -372,7 +372,8 @@ th {
 .gigantic, .huge, .large, .bigger, .big, .small,
 h1, h2, h3, h4, h5, h6 {
   color: #A2C5FF;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0 0 30px 0; }
 
 .gigantic {
   font-size: 110px;
@@ -457,6 +458,15 @@ body {
 body {
   background-color: #283140; }
 
+.content-wrapper {
+  margin: 0 auto;
+  width: 60%;
+  background-color: #51637F; }
+
+section {
+  padding: 80px;
+  border-bottom: 2px solid white; }
+
 header {
   height: 400px;
   background-image: url("/assets/img/header-img.jpg");
@@ -469,3 +479,47 @@ header {
   line-height: 1;
   text-align: center;
   padding-top: 80px; }
+
+.about {
+  position: relative;
+  padding-top: 120px; }
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -100px;
+  right: 50%;
+  background-image: url("/assets/img/me.png");
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: -100px;
+  z-index: 99;
+  background-color: #ffffff;
+  text-indent: -9999px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+
+.badge-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.badge {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.icon {
+  height: 100px;
+  width: 80px; }
+
+.caption {
+  -ms-flex-item-align: center;
+      align-self: center; }

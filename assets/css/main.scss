@@ -4,5 +4,10 @@
 @import "1-base/_vars";
 @import "1-base/_base";
 @import "4-layouts/page";
+@import "4-layouts/section";
 
-@import "3-sections/header"
+@import "3-sections/header";
+@import "3-sections/about";
+@import "3-sections/contact";
+@import "3-sections/portfolio";
+@import "3-sections/footer";

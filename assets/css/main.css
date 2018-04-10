@@ -588,10 +588,36 @@ section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  margin-bottom: 30px; }
+  @media (max-width: 660px) {
+    .example {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-align: center;
+          align-items: center; } }
+
+.example-img {
+  width: 200px;
+  height: 150px; }
+  @media (max-width: 660px) {
+    .example-img {
+      width: 300px;
+      height: 200px; } }
+
+.example-title {
+  margin: 0 0 20px 0;
+  font-size: 30px; }
+  @media (max-width: 720px) {
+    .example-title {
+      font-size: 25px; } }
 
 .example-desc {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  margin-left: 30px; }
+  @media (max-width: 660px) {
+    .example-desc {
+      margin-left: 0; } }

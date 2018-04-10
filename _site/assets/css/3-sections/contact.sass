@@ -1,0 +1,54 @@
+.form-wrapper
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    @media (max-width: 1300px)
+        flex-direction: column
+    @media (max-width: 1115px)
+        flex-direction: row
+    @media (max-width: 660px)
+        flex-direction: column
+
+form
+    display: flex
+    flex-direction: column
+
+input,
+textarea
+    width: 320px
+    padding: 10px
+    margin: 0 0 20px 0
+    background-color: $text-color
+    color: $bg-color
+    border-color: $primary-color
+    @media (max-width: 825px)
+        width: 250px
+    @media (max-width: 660px)
+        width: 320px
+    @media (max-width: 445px)
+        width: 250px
+
+.btn-send
+    background-color: $accent-color
+    color: #252525
+    padding: 0
+    width: 150px
+    height: 60px
+    font-size: 25px
+    text-transform: uppercase
+    border: 10px solid $bg-color
+    box-shadow: inset -5px -5px 14px -3px #ABABAB, 0 2px 0px -1px #DDDDDD, 0 -2px 0px -1px #DDDDDD
+    &:hover
+        background-color: darken($accent-color, 20%)
+        box-shadow: inset -5px -5px 14px -3px #ABABAB, 0 3px 0px -1px #DDDDDD
+    &:focus
+        outline-color: $text-color
+
+.form-text
+    margin-left: 30px
+    @media (max-width: 1300px)
+        margin-left: 0
+    @media (max-width: 1115px)
+        margin-left: 30px
+    @media (max-width: 660px)
+        margin-left: 0

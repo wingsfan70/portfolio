@@ -584,6 +584,81 @@ section {
   -ms-flex-item-align: center;
       align-self: center; }
 
+.form-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  @media (max-width: 1300px) {
+    .form-wrapper {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+  @media (max-width: 1115px) {
+    .form-wrapper {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  @media (max-width: 660px) {
+    .form-wrapper {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
+
+form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+input,
+textarea {
+  width: 320px;
+  padding: 10px;
+  margin: 0 0 20px 0;
+  background-color: #A2C5FF;
+  color: #283140;
+  border-color: #51637F; }
+  @media (max-width: 825px) {
+    input,
+    textarea {
+      width: 250px; } }
+  @media (max-width: 660px) {
+    input,
+    textarea {
+      width: 320px; } }
+  @media (max-width: 445px) {
+    input,
+    textarea {
+      width: 250px; } }
+
+.btn-send {
+  background-color: #91B1E5;
+  color: #252525;
+  padding: 0;
+  width: 150px;
+  height: 60px;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: 10px solid #283140;
+  box-shadow: inset -5px -5px 14px -3px #ABABAB, 0 2px 0px -1px #DDDDDD, 0 -2px 0px -1px #DDDDDD; }
+  .btn-send:hover {
+    background-color: #3f77d2;
+    box-shadow: inset -5px -5px 14px -3px #ABABAB, 0 3px 0px -1px #DDDDDD; }
+  .btn-send:focus {
+    outline-color: #A2C5FF; }
+
+.form-text {
+  margin-left: 30px; }
+  @media (max-width: 1300px) {
+    .form-text {
+      margin-left: 0; } }
+  @media (max-width: 1115px) {
+    .form-text {
+      margin-left: 30px; } }
+  @media (max-width: 660px) {
+    .form-text {
+      margin-left: 0; } }
+
 .example {
   display: -ms-flexbox;
   display: flex;

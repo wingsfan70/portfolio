@@ -723,3 +723,11 @@ textarea {
     .example-desc {
       -ms-flex-direction: column;
           flex-direction: column; } }
+
+footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }

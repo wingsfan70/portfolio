@@ -560,6 +560,18 @@ section {
     .avatar {
       top: -85px; } }
 
+.menu {
+  width: 90px;
+  height: 40px;
+  background-color: #A2C5FF;
+  position: absolute;
+  top: 37px;
+  left: 9%;
+  z-index: 99;
+  color: #283140;
+  text-align: center;
+  padding-top: 14px; }
+
 .badge-wrapper {
   display: -ms-flexbox;
   display: flex;

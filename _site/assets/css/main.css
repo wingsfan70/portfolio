@@ -472,6 +472,8 @@ body {
 section {
   padding: 20px 80px 80px 80px;
   border-bottom: 2px solid white; }
+  section:last-child {
+    border: none; }
 
 @media (max-width: 750px) {
   h1 {
@@ -531,7 +533,7 @@ section {
     .header-text {
       font-size: 40px; } }
 
-.about {
+#about {
   position: relative;
   padding-top: 120px; }
 
@@ -560,17 +562,42 @@ section {
     .avatar {
       top: -85px; } }
 
-.menu {
-  width: 90px;
-  height: 40px;
-  background-color: #A2C5FF;
+nav {
   position: absolute;
   top: 37px;
   left: 9%;
+  z-index: 99; }
+
+.dropdown {
+  width: 90px;
+  height: 40px;
+  background-color: #A2C5FF;
   z-index: 99;
   color: #283140;
   text-align: center;
-  padding-top: 14px; }
+  font-weight: bold; }
+  .dropdown:hover {
+    background-color: white; }
+
+.dropdown-items {
+  display: none;
+  position: absolute; }
+  .dropdown-items a {
+    color: #283140;
+    text-align: center;
+    padding-top: 12px;
+    border: 1px solid white;
+    font-weight: bold;
+    height: 34px;
+    width: 120px;
+    display: block;
+    background-color: #A2C5FF; }
+    .dropdown-items a:hover {
+      background-color: #3f77d2;
+      box-shadow: inset -5px -5px 14px -3px #ABABAB, 0 3px 0px -1px #DDDDDD; }
+
+.show {
+  display: block; }
 
 .badge-wrapper {
   display: -ms-flexbox;

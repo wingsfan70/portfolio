@@ -1,4 +1,4 @@
-.about
+#about
     position: relative
     padding-top: 120px
     
@@ -24,15 +24,38 @@
     @media (max-width: 400px)
         top: -85px
 
-.menu
-    width: 50px
-    height: 50px
-    background-color: $text-color
+nav
     position: absolute
-    top: -100px
-    right: 25%
+    top: 37px
+    left: 9%
+    z-index: 99
+
+.dropdown
+    width: 90px
+    height: 40px
+    background-color: $text-color
     z-index: 99
     color: $bg-color
+    text-align: center
+    font-weight: bold
+    &:hover
+        background-color: white
+
+.dropdown-items
+    display: none
+    position: absolute
+    a
+        color: $bg-color
+        text-align: center
+        padding-top: 12px
+        border: 1px solid white
+        font-weight: bold
+        height: 34px
+        width: 120px
+        display: block
+        background-color: $text-color
+    .show
+        display: block
 
 .badge-wrapper
     display: flex

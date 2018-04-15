@@ -1,6 +1,11 @@
-section.about
+section#about
     .avatar Gary Caseman
-    .menu Menu
+    nav
+        button.dropdown(onclick='menuClick()') Menu
+        #nav-dropdown.dropdown-items
+            a(href="#about") About
+            a(href="#project") Projects
+            a(href="#contact") Contact
     h1 About
     p.bigger.
         I am a Front-end developer. Founder of <a href="http://www.gcwebdev.com">GC Web Development.</a> 
